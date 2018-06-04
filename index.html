@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <nav>
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo">Postit</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">SignUp</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Login</a></li>
+            <li><a href="#">SignUp</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+      
+      <div class="container">
+        
+        <div class="row left-align">
+          <div class="col s8 offset-s2">
+            <div class="card-panel">
+              <form>
+                <div class="input-field col`">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                  </div>
+                </div>
+                
+                <button class="btn waves-effect waves-light" type="submit" name="action">Login
+                  <i class="material-icons right">person</i>
+                </button>
+                
+                
+                <a class="btn waves-effect waves-light right"  href="#">
+                  SignUp
+                  <i class="material-icons right">person_add</i>
+                </a>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </div><!-- container-->
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          let elems = document.querySelectorAll('.sidenav');
+          let instances = M.Sidenav.init(elems);
+        });
+      </script>
+    </body>
+  </html>
