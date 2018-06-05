@@ -1,6 +1,38 @@
-.navbar-fixed {
+.nav-margin {
   margin-bottom: 40px;
+}
+.nav-wrapper {
+  padding: 0 25px;
 }
 .container {
   margin-bottom: 50px;
+}
+.profile-img {
+  width: 40px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+#user-name {
+  display: inline;
+  margin-top: 0;
+  
+}
+#user-time {
+  /*display: inline;*/
+}
+#chat-area {
+  
+}
+#chat-bar {
+      height: 630px;
+}
+#chat-message {
+  margin-bottom: 0;
+}
+
+@media (max-width:880px) {
+  #chat-bar {
+    display: none;
+  }
 }

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Postit</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#!" class="dropdown-trigger" data-target="accountsDropdown"><i class="material-icons">person</i></a></li>
+              <li><a href="#"><i class="material-icons">info_outline</i></a></li>
+              <li><a href="#"><i class="material-icons">settings</i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#"><i class="material-icons">person</i>Account</a></li>
+        <li><a href="#"><i class="material-icons">settings</i>Settings</a></li>
+        <li><a href="#"><i class="material-icons">info_outline</i>About</a></li>
+      </ul>
+      
+      <ul id="accountsDropdown" class="dropdown-content">
+        <li><a href="#!">Switch account</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Logout</a></li>
+      </ul>
+      
+      
+        <div class="row">
+          <div class="col m3 teal hide-on-small-only" id="chat-bar">
+            <h5 class="white-text">User Space</h5>
+            <span class="white-text">User Name</span>
+            <ul class="collection with-header">
+              <li class="collection-header"><h6>Groups <i class="material-icons right">add_circle_outline</i></h6></li>
+              <li class="collection-item">#group 1<i class="material-icons right">filter_9_plus</i></li>
+              <li class="collection-item">#group 2<i class="material-icons right">filter_9_plus</i></li>
+              <li class="collection-item grey lighten-3">#group 3</li>
+              <li class="collection-item">#group 4<i class="material-icons right">filter_9_plus</i></li>
+            </ul>
+            
+            <ul class="collection with-header">
+              <li class="collection-header"><h6>Direct messages<i class="material-icons right">add_circle_outline</i></h6></li>
+              <li class="collection-item">friend 1<i class="material-icons right">done</i></li>
+              <li class="collection-item">friend 2<i class="material-icons right">filter_3</i></li>
+              <li class="collection-item">friend 3<i class="material-icons right">filter_9_plus</i></li>
+              <li class="collection-item">friend 4<i class="material-icons right">done_all</i></li>
+            </ul>
+            
+          </div>
+          
+          <div class="col s12 m9 grey lighten-3" id="chat-area">
+            
+            <div class="row" id="chat-message">
+              <div class="col s12 m10">
+                <div class="card-panel">
+                  <img class="img-responsive profile-img" src="https://images.unsplash.com/photo-1491604612772-6853927639ef?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=47e18eda1a71829fdd6e6e1e2810b25d&auto=format&fit=crop&w=334&q=80">
+                  <h5 id="user-name">User Name</h5>
+                  <p id="user-time">7:43am</p>
+                  <p class="">Lorem ipsum dolor sit amet, vim ad magna legimus, tempor prompta definiebas his ne. Velit vocibus sed ad, ex usu movet nullam moderatius. Vim ad dolor accusata prodesset, in nihil primis vivendo pri. Summo semper repudiare et vix, eos te soluta tempor audire, pri erat oratio maiorum an.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <hr>
+            
+            <div class="row" id="chat-message">
+              <div class="col s12 m10 right">
+                <div class="card-panel">
+                  <img class="img-responsive profile-img" src="https://images.unsplash.com/photo-1491604612772-6853927639ef?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=47e18eda1a71829fdd6e6e1e2810b25d&auto=format&fit=crop&w=334&q=80">
+                  <img src="smiley.gif" alt="Smiley face" height="42" width="42">
+                  <h5 id="user-name">User Name</h5>
+                  <p id="user-time">7:43am</p>
+                  <p class="">Vim ad dolor accusata prodesset, in nihil primis vivendo pri. Summo semper repudiare et vix, eos te soluta tempor audire, pri erat oratio maiorum an. Impedit ocurreret consectetuer mel an, vis fabellas salutatus rationibus cu. Reque iracundia id usu. Mel quot viris te, mel ei percipit adolescens, qui antiopam adolescens ei.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">textsms</i>
+                    <input type="text" id="autocomplete-input" class="autocomplete">
+                    <label for="autocomplete-input">Message group 3</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+            
+        </div>
+      
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+  </html>
