@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Postit</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#!" class="dropdown-trigger" data-target="accountsDropdown"><i class="material-icons">person</i></a></li>
+              <li><a href="#"><i class="material-icons">info_outline</i></a></li>
+              <li><a href="#"><i class="material-icons">settings</i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="#"><i class="material-icons">person</i>Account</a></li>
+        <li><a href="#"><i class="material-icons">settings</i>Settings</a></li>
+        <li><a href="#"><i class="material-icons">info_outline</i>About</a></li>
+      </ul>
+      
+      <ul id="accountsDropdown" class="dropdown-content">
+        <li><a href="#!">Switch account</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Logout</a></li>
+      </ul>
+      
+      <div class="container">
+        <h2>Create a group</h2>
+        <p class="flow-text grey-text text-lighten-1">Groups are where your members communicate. They're best when organized around a topic - #leads, for example.</p>
+        <form>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="group_name" type="text" class="validate" value="# ">
+              <label for="group_name">Group name</label>
+              <span class="helper-text" data-error="wrong" data-success="right">Names must be lowercase, without spaces or periods and shorter than 22 characters</span>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="add_members" type="text" class="validate">
+              <label for="add_members">Add members</label>
+              <span class="helper-text" data-error="wrong" data-success="right">Optional</span>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="purpose" class="materialize-textarea"></textarea>
+              <label for="purpose">Purpose</label>
+              <span class="helper-text" data-error="wrong" data-success="right">Optional. Give your group a purpose that describes what it will be used for.</span>
+            </div>
+          </div>
+          
+          <a href="#"  class="waves-effect waves-teal btn-flat">Cancel</a>
+          
+          <button class="btn waves-effect waves-light" type="submit" name="action">Create Group
+          </button>
+          
+        </form>
+      </div><!-- container-->
+
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+  </html>
